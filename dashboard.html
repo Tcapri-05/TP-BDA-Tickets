@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero | Mesa de Ayuda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="menu">
+      <div class="marca">Mesa de Ayuda</div>
+      <button id="nav-resumen" class="activo">Resumen</button>
+      <button id="nav-tecnicos">Técnicos</button>
+      <div class="usuario">Sesión: <strong id="nombre-usuario"></strong></div>
+      <button class="salir" onclick="cerrarSesion()">Cerrar sesión</button>
+    </nav>
+
+    <main class="contenido">
+      <div class="aviso-prototipo">
+        Prototipo de interfaz (1ª entrega): los números son de ejemplo. En la 2ª entrega se reemplazan por consultas SQL a Supabase.
+      </div>
+      <div id="vista"></div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/sesion.js"></script>
+  <script src="js/prototipo.js"></script>
+</body>
+</html>

@@ -153,6 +153,12 @@ tr.clic:hover td { background: #f1f5ff; }
 .verde { background: var(--verde); }
 .amarillo { background: var(--amarillo); }
 .rojo { background: var(--rojo); }
+.sin-dato { background: #c3c9d4; }
+td:has(.luz) { white-space: nowrap; }
+
+.cargando { color: var(--texto-suave); }
+.mensaje-error { color: var(--rojo); background: #fdecec; border: 1px solid #f3c2c2; border-radius: 8px; padding: 10px 12px; }
+.panel.alerta { margin-top: 18px; }
 
 .referencia { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.85rem; color: var(--texto-suave); margin-top: 12px; }
 .referencia span { display: inline-flex; align-items: center; gap: 6px; }

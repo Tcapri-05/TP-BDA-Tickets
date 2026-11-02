@@ -10,14 +10,21 @@ con drill down de 3 niveles y semáforo de cumplimiento de SLA.
 | Archivo | Qué es |
 |---|---|
 | `index.html` + `js/login.js` | Login (valida contra la tabla `usuarios` con la función SQL `login()`) |
-| `dashboard.html` + `js/prototipo.js` | Prototipo del tablero (datos de ejemplo, navegación entre niveles) |
+| `dashboard.html` + `js/tablero.js` | Tablero: indicadores, drill down / drill up y semáforo con datos de la base |
 | `js/config.js` | URL y clave pública de Supabase |
 | `js/sesion.js` | Guarda la sesión y protege el tablero |
 | `css/estilos.css` | Estilos |
 | `sql/01_esquema.sql` | Tablas, relaciones y seguridad (RLS) |
 | `sql/02_login.sql` | Función `login()` con bcrypt |
 | `sql/03_datos.sql` | INSERT de datos iniciales y usuario de prueba |
-| `docs/entrega1.html` | Documento de la 1ª entrega (descripción + modelo canónico). Ctrl+P → PDF |
+| `sql/04_consultas.sql` | Vista `v_tickets` y funciones SQL que alimentan cada pantalla del tablero |
+| `docs/` | Documentos de la 1ª y 2ª entrega (Word y PDF), capturas y scripts que generan los Word |
+
+## Cómo crear la base
+
+En el SQL Editor de Supabase, ejecutar en orden `sql/01_esquema.sql`, `sql/02_login.sql`,
+`sql/03_datos.sql` y `sql/04_consultas.sql`. Después poner la URL y la clave pública del proyecto
+en `js/config.js`.
 
 ## Cómo abrirlo
 
